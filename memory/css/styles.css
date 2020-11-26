@@ -1,0 +1,79 @@
+body {
+    background-color: #4D352F;
+}
+
+.main-block{
+    text-align: center;
+}
+
+#start, #terminate {
+    cursor: pointer;
+}
+
+.pane {
+    background-color: #7F726E;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+    position: relative;
+}
+
+.panels:last-child {
+    margin-right: 20px;
+    height: 30px;
+}
+
+.panels {
+    height: 30px;
+}
+
+.matrix {
+    background-color: #291C16;
+    margin-top:20vh;
+    display: inline-block;
+}
+
+
+.tile {
+    background-color: #5F4339;
+    width: 75px;
+    height: 75px;
+    border: 4px solid #291C16;
+    cursor: pointer;
+}
+
+.active-tile {
+    background-color: #0F91A1;
+}
+
+.fail-tile {
+    background-image: url('../images/wrong.png');
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.success-tile {
+    background-image: url('../images/success.png');
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.rotate90 {
+    transition: transform 1s;
+    transform: rotate(90deg);
+}
+
+#bonus{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.disabled {
+    pointer-events:none;
+}
